@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+  
+  .trek-card {
+    @apply relative overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white font-medium py-2 px-4 rounded transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-500 hover:bg-secondary-600 text-white font-medium py-2 px-4 rounded transition-colors;
+  }
+  
+  .btn-accent {
+    @apply bg-accent-500 hover:bg-accent-600 text-white font-medium py-2 px-4 rounded transition-colors;
+  }
+  
+  .btn-outline {
+    @apply border border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white font-medium py-2 px-4 rounded transition-colors;
+  }
+  
+  .form-control {
+    @apply w-full mb-4;
+  }
+  
+  .form-label {
+    @apply block text-gray-700 font-medium mb-1;
+  }
+  
+  .form-input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500;
+  }
+  
+  .section-padding {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+  
+  .section-title {
+    @apply text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12;
+  }
+  
+  .difficulty-badge-easy {
+    @apply bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded;
+  }
+  
+  .difficulty-badge-moderate {
+    @apply bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded;
+  }
+  
+  .difficulty-badge-challenging {
+    @apply bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded;
+  }
+  
+  .difficulty-badge-difficult {
+    @apply bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded;
+  }
+  
+  .difficulty-badge-extreme {
+    @apply bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded;
+  }
+}
